@@ -18,8 +18,7 @@ namespace DependencyInjectionDemo
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             var builder = new CommissionCalculatorBuilder();
-            var calc = builder.buildCommissionCalculator();
-            Application.Run(new fmCalculator(calc));
+            Application.Run(new fmCalculator(builder.buildCommissionCalculator()));
         }
     }
 }
